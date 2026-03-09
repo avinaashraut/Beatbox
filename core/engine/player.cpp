@@ -23,10 +23,16 @@ int main(int argc, char* argv[]) {
         return 0;
     }
 
-    BeatboxPlayer player;
+    AudioDecoder decoder;
+    AudioOutput output;
 
-    player.loadFile(argv[1]);
-    player.play();
+    decoder.openFile(argv[1]);
+
+    output.openDevice();
+
+    decoder.decode();
+
+    std::cout << "Playback pipeline executed" << std::endl;
 
     return 0;
 }
