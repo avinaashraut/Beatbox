@@ -1,19 +1,32 @@
 #include <iostream>
+#include <string>
+
+class BeatboxPlayer {
+public:
+    BeatboxPlayer() {
+        std::cout << "Beatbox Engine Initialized" << std::endl;
+    }
+
+    void loadFile(const std::string& filename) {
+        std::cout << "Loading audio file: " << filename << std::endl;
+    }
+
+    void play() {
+        std::cout << "Playback started (not implemented yet)" << std::endl;
+    }
+};
 
 int main(int argc, char* argv[]) {
-
-    std::cout << "Beatbox Audio Engine Starting..." << std::endl;
 
     if (argc < 2) {
         std::cout << "Usage: beatbox <audio_file>" << std::endl;
         return 0;
     }
 
-    std::cout << "Loading file: " << argv[1] << std::endl;
+    BeatboxPlayer player;
 
-    // TODO: Audio decoding and playback will be implemented here
-
-    std::cout << "Playback engine not implemented yet." << std::endl;
+    player.loadFile(argv[1]);
+    player.play();
 
     return 0;
 }
