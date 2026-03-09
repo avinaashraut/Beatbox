@@ -1,3 +1,5 @@
+#include "../decoder/audio_decoder.h"
+#include "../output/audio_output.h"
 #include "../library/music_library.h"
 #include "player.h"
 #include <iostream>
