@@ -1,6 +1,6 @@
 #include "player.h"
 #include <iostream>
-
+#include <string>
 BeatboxPlayer::BeatboxPlayer() {
     std::cout << "Beatbox Engine Initialized" << std::endl;
 }
