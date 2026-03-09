@@ -1,3 +1,4 @@
+#include "../library/music_library.h"
 #include "player.h"
 #include <iostream>
 #include <string>
