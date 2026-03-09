@@ -8,4 +8,5 @@ add_executable(beatbox
     core/engine/player.cpp
     core/library/music_library.cpp
     core/decoder/audio_decoder.cpp
+    core/output/audio_output.cpp
 )
