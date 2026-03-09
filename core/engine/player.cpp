@@ -1,20 +1,17 @@
+#include "player.h"
 #include <iostream>
-#include <string>
 
-class BeatboxPlayer {
-public:
-    BeatboxPlayer() {
-        std::cout << "Beatbox Engine Initialized" << std::endl;
-    }
+BeatboxPlayer::BeatboxPlayer() {
+    std::cout << "Beatbox Engine Initialized" << std::endl;
+}
 
-    void loadFile(const std::string& filename) {
-        std::cout << "Loading audio file: " << filename << std::endl;
-    }
+void BeatboxPlayer::loadFile(const std::string& filename) {
+    std::cout << "Loading audio file: " << filename << std::endl;
+}
 
-    void play() {
-        std::cout << "Playback started (not implemented yet)" << std::endl;
-    }
-};
+void BeatboxPlayer::play() {
+    std::cout << "Playback started (not implemented yet)" << std::endl;
+}
 
 int main(int argc, char* argv[]) {
 
